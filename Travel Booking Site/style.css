@@ -1,0 +1,119 @@
+/* Basic Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+}
+
+/* Header */
+header {
+    background-color: #1e3799;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Toggle Menu */
+#toggle {
+    display: none;
+}
+
+.menu {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px;
+    background-color: #dff9fb;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #1e3799;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Booking Section */
+.booking {
+    text-align: center;
+    padding: 40px;
+}
+
+.booking form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.booking input {
+    padding: 8px;
+    width: 150px;
+}
+
+.booking button {
+    padding: 8px 20px;
+    background-color: #1e3799;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3799;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #1e3799;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px;
+        border-top: 1px solid white;
+    }
+
+    #toggle:checked + .menu + nav {
+        display: flex;
+    }
+
+    .menu {
+        display: block;
+    }
+}
